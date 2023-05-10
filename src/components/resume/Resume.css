@@ -1,0 +1,79 @@
+.resume_container {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.resume_heading {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+  margin-left: var(--mb-0-25);
+}
+
+.resume_icon {
+  font-size: 1.5rem;
+  margin-right: var(--mb-0-25);
+}
+
+.resume_sub_container {
+  display: flex;
+  margin-left: var(--mb-2);
+}
+
+.resume_rounded {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+}
+
+.resume_line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--title-color);
+  transform: translate(6px, -7px);
+}
+
+.education_container,
+.work_container {
+  margin-left: var(--mb-1);
+}
+
+.education_title,
+.work_title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.education_subtitle,
+.work_subtitle {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.calendar_icon {
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+@media screen and (max-width: 768px) {
+  .resume_container {
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .resume_sub_container {
+    margin-left: var(--mb-1);
+  }
+  .education_title,
+  .education_subtitle {
+    inline-size: 160px;
+    overflow-wrap: break-word;
+  }
+}
