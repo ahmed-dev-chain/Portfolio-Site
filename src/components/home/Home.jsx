@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import profileImage from "../../assets/perfil.png";
+import profileImage from "../../assets/me.png";
 import "./Home.css";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <section className="home section" id="home">
       <div className="home_container container">
         <div className="home_content">
-           <div className="home_img" data-aos="zoom-in-left">
+          <div className="home_img" data-aos="zoom-in-left">
             <svg
               className="home_profile_image_svg"
               viewBox="0 0 200 187"
@@ -31,8 +31,8 @@ const Home = () => {
                 />
                 <image
                   className="home_profile_image"
-                  x="12"
-                  y="18"
+                  x="10"
+                  y="0"
                   xlinkHref={profileImage}
                 />
               </g>
@@ -56,7 +56,7 @@ const Home = () => {
               Hello I'am
             </h3>
             <h1 className="home_title" data-aos="zoom-in-right">
-              Your Name Here
+              Muhammad Ahmed
             </h1>
             <h3 className="home_subtitle">
               <Typewriter
@@ -64,9 +64,8 @@ const Home = () => {
                   strings: [
                     "Web Developer",
                     "Front-End Developer",
-                    "Back-End Developer",
-                    "Full Stack Developer",
-                    "UI/UX Designer",
+                    "React JS / React Native Developer",
+                    "MERN Stack Developer",
                   ],
                   autoStart: true,
                   loop: true,
@@ -75,12 +74,19 @@ const Home = () => {
               />
             </h3>
             <p className="home_description" data-aos="zoom-in">
-              Full-stack developer with experience in developing and managing
-              web applications. Strong knowledge of React, Node Js, and Express
-              Js. Experienced in creating unit and end-to-end tests.
+              Experienced software developer with 2+ years
+              of expertise in React.js and 6 months of experience in React
+              Native. I have a solid understanding of building user interfaces
+              and web applications using React.js, a popular JavaScript library.
+              I also have some familiarity with Node.js, a server-side JavaScript
+              runtime, and with MongoDB, a NoSQL database, to store
+              and retrieve data. With  diverse skill set and experience in
+              front-end and mobile development, I am well-equipped to
+              contribute to projects that require React.js and React Native
+              expertise.
             </p>
             <a
-              href="https://github.com"
+              href="https://github.com/aw708596?tab=repositories"
               rel="noreferrer"
               className="button button_flex"
               target="_blank"

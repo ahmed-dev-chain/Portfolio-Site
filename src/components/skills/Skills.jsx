@@ -13,20 +13,25 @@ const Skills = () => {
           title="Frontend Developer"
           skills={[
             { skill_name: "HTML", skill_level: "Advanced" },
-            { skill_name: "CSS", skill_level: "Intermediate" },
-            { skill_name: "JavaScript", skill_level: "Intermediate" },
+            { skill_name: "CSS", skill_level: "Advanced" },
             { skill_name: "Bootstrap", skill_level: "Intermediate" },
-            { skill_name: "Git", skill_level: "Intermediate" },
-            { skill_name: "React", skill_level: "Intermediate" },
+            { skill_name: "Material UI", skill_level: "Intermediate" },
+            { skill_name: "Native Base", skill_level: "Intermediate" },
+            { skill_name: "JavaScript", skill_level: "Intermediate" },
+            { skill_name: "Jquery", skill_level: "Intermediate" },
+            { skill_name: "React JS", skill_level: "Intermediate" },
+            { skill_name: "Redux-Toolkit", skill_level: "Intermediate" },
+            { skill_name: "Next JS", skill_level: "Beginner" },
+            { skill_name: "React Native", skill_level: "Intermediate" },
+            { skill_name: "Git/Github", skill_level: "Intermediate" },
           ]}
         />
         <SkillBox
           title="Backend Developer"
           skills={[
-            { skill_name: "Firebase", skill_level: "Intermediate" },
-            { skill_name: "Node Js", skill_level: "Intermediate" },
-            { skill_name: "Express Js", skill_level: "Intermediate" },
-            { skill_name: "Mongo DB", skill_level: "Intermediate" },
+            { skill_name: "Node Js", skill_level: "Beginner" },
+            { skill_name: "Express Js", skill_level: "Beginner" },
+            { skill_name: "Mongo DB", skill_level: "Beginner" },
           ]}
         />
       </div>

@@ -10,11 +10,18 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const formData = new FormData(this);
+
     emailjs.sendForm(
-      "service_tccoljl",
-      "template_jlqftt9",
+      "aw708596_service_connect",
+      "template_00p8d2b",
       form.current,
-      "kvWnCkrnXzmD52E7S"
+      'uIq0E7b2SrWz3YhTf',
+      {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        message: formData.get('message')
+      }
     );
 
     toast.success("Message Send Successfully!");
@@ -36,11 +43,11 @@ const Contact = () => {
                 <i className="uil uil-envelope-upload contact_card_icon"></i>
                 <h3 className="contact_card_title">Email</h3>
                 <span className="contact_card_data">
-                    Add your email Id here
+                      aw708596@gmail.com
                 </span>
 
                 <a
-                  href="mailto:YourMail@gmail.com"
+                  href="mailto:aw708596@gmail.com"
                   rel="noreferrer"
                   className="contact_button"
                   target="_blank"
@@ -53,10 +60,10 @@ const Contact = () => {
               <div className="contact_card" data-aos="fade-up" data-aos-delay="500">
                 <i className="uil uil-whatsapp contact_card_icon"></i>
                 <h3 className="contact_card_title">Whatsapp</h3>
-                <span className="contact_card_data">Add your whatsapp Number</span>
+                <span className="contact_card_data">+923300624626</span>
 
                 <a
-                  href="https://api.whatsapp.com/send?phone=000000000"
+                  href="https://api.whatsapp.com/send?phone=03300624626"
                   rel="noreferrer"
                   className="contact_button"
                   target="_blank"
@@ -67,17 +74,17 @@ const Contact = () => {
               </div>
 
               <div className="contact_card" data-aos="fade-up" data-aos-delay="700">
-                <i className="uil uil-facebook-messenger contact_card_icon"></i>
-                <h3 className="contact_card_title">Messenger</h3>
-                <span className="contact_card_data">Messenger Username</span>
+                <i className="uil uil-linkedin contact_card_icon"></i>
+                <h3 className="contact_card_title">Linkedin</h3>
+                <span className="contact_card_data">muhammad-ahmed-271b88229</span>
 
                 <a
-                  href="Your Messenger url comes here"
+                  href="https://www.linkedin.com/in/muhammad-ahmed-271b88229/"
                   rel="noreferrer"
                   className="contact_button"
                   target="_blank"
                 >
-                  Write me
+                  View Me
                   <i className="uil uil-arrow-right contact_button_icon"></i>
                 </a>
               </div>
@@ -112,7 +119,7 @@ const Contact = () => {
               <div className="contact_form_div contact_project_area" data-aos="fade-up"  data-aos-delay="700">
                 <label className="contact_form_tag">Project</label>
                 <textarea
-                  name="project"
+                  name="message"
                   cols="30"
                   rows="10"
                   className="contact_form_input"

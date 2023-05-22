@@ -15,18 +15,18 @@ const Resume = () => {
           qualification={[
             {
               title: "Bachelor In Computer Science",
-              location: "University Location",
-              calender: "Date - Date",
+              location: "Virtual University, Lahore",
+              calender: "2023 - 2028",
             },
             {
               title: "Intermediate",
-              location: "College Location",
-              calender: "Date - Date",
+              location: "Degree College, M.B.DIN",
+              calender: "2020 - 2022",
             },
             {
               title: "Matriculation",
-              location: "Your High School Location",
-              calender: "Date - Date",
+              location: "Govt High School, M.B.DIN",
+              calender: "2007 - 2019",
             },
           ]}
         />
@@ -36,9 +36,14 @@ const Resume = () => {
           iconClass="briefcase-alt"
           qualification={[
             {
-              title: "MERN Stack Developer",
-              location: "CompanyName - Location",
-              calender: "Joining Date - Present",
+              title: "React JS Developer",
+              location: "Business Solutions And Services - Lahore",
+              calender: "January 2022 - Present",
+            },
+            {
+              title: "Front End Developer",
+              location: "Capazyte - Karachi",
+              calender: "October 2020 - December 2021",
             },
           ]}
         />

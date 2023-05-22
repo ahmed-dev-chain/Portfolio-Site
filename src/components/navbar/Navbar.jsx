@@ -50,7 +50,7 @@ const Navbar = () => {
     <header className="header">
       <nav className="nav container">
         <div className="nav_logo" data-aos="fade-right">
-          Your Name Here
+              Muhammad Ahmed
         </div>
         <div
           className={showmenu ? "nav_menu show_menu" : "nav_menu"}

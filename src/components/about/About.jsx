@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
-import aboutImg from "../../assets/about.jpg";
-import cv_pdf from "../../assets/John-Cv.pdf";
+import aboutImg from "../../assets/About.webp";
+import CV from '../../assets/Muhammad-Ahmed.pdf'
 
 const About = () => {
   return (
@@ -34,8 +34,8 @@ const About = () => {
               data-aos-delay="300"
             >
               <i className="uil uil-suitcase-alt about_icon"></i>
-              <h3 className="about_title">Completed</h3>
-              <span className="about_subtitle">20+ projects</span>
+              <h3 className="about_title">Worked On</h3>
+              <span className="about_subtitle">5+ projects</span>
             </div>
             <div
               className="about_box"
@@ -44,20 +44,20 @@ const About = () => {
             >
               <i className="uil uil-graduation-cap about_icon"></i>
               <h3 className="about_title">Qulafication</h3>
-              <span className="about_subtitle">Bachelors</span>
+              <span className="about_subtitle">Undergraduate</span>
             </div>
           </div>
 
           <p className="about_description" data-aos="zoom-in">
-            I am "Name", web developer from "Country" and currently
-            working as a full stack developer. My expertise lies in MERN Stack and 
-            can work independently and as part of a team,
-            and comfortable with agile development methods.
+            I am Muhammad Ahmed, Front-End developer from Pakistan and currently
+            working as a React JS developer. My expertise lies in MERN Stack and 
+            can work independently and as part of a team, and comfortable with 
+            agile development methods.
           </p>
 
           <a
-            href={cv_pdf}
-            download="Add your CV here"
+            href={CV}
+            download="Muhammad-Ahmed-resume.pdf"
             className="button button_flex"
             data-aos="flip-right"
           >

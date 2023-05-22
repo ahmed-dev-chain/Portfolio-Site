@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer_container container">
-        <h1 className="footer_title" data-aos="zoom-in">Name Here</h1>
+        <h1 className="footer_title" data-aos="zoom-in">Muhammad Ahmed</h1>
 
         <ul className="footer_list" data-aos="fade-down">
           <li>
@@ -19,7 +19,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#prpjects" className="footer_link">
+            <a href="#projects" className="footer_link">
               Projects
             </a>
           </li>
@@ -27,7 +27,7 @@ const Footer = () => {
 
         <div className="footer_social"  data-aos="fade-up">
           <a
-            href="https://www.facebook.com/you_id_here"
+            href="https://www.facebook.com/AHMED32122"
             rel="noreferrer"
             className="footer_social_link"
             target="_blank"
@@ -35,7 +35,7 @@ const Footer = () => {
             <i className="uil uil-facebook-f"></i>
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/khali_zero/"
             rel="noreferrer"
             className="footer_social_link"
             target="_blank"
@@ -43,7 +43,7 @@ const Footer = () => {
             <i className="uil uil-instagram"></i>
           </a>
           <a
-            href="https://www.twitter.com"
+            href="https://twitter.com/Muhamma24742337"
             rel="noreferrer"
             className="footer_social_link"
             target="_blank"
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <span className="footer_copy">
-          &#169; YourBrand / Name. All rigths reserved
+          &#169; Muhammad Ahmed. All rigths reserved
         </span>
       </div>
     </footer>
