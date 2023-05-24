@@ -43,7 +43,7 @@ const Projects = () => {
               The Google Books API integration allows users to retrieve book information such as title, author, description, and cover image. The application displays this information in an organized and user-friendly manner, making it easy for users to find and select books they are interested in.
               Overall, Book Land is a comprehensive web application that provides a seamless and user-friendly experience for book lovers who want to explore and discover new books in an organized and efficient way.
               </p>
-              `
+              `,
             },
             {
               imageURL: expense,

@@ -17,7 +17,7 @@ const Project = ({ projects }) => {
               key={i}
               data-aos={i % 2 !== 0 ? "fade-left" : "fade-right"}
             >
-              <img src={data.imageURL} alt="" className="project_image" />
+              <img src={data.imageURL} alt="Project Data" className="project_image" />
               <div className="background_blur"></div>
               <h3 className="project_heading">{data.title}</h3>
               <div className="project_link">
