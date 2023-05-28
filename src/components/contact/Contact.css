@@ -19,6 +19,8 @@
   align-items: center;
 }
 
+
+
 .contact_card {
   background-color: var(--container-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -56,6 +58,10 @@
   align-items: center;
   justify-content: center;
   column-gap: 0.25rem;
+}
+
+.justify_center{
+  justify-content: center;
 }
 
 .contact_button_icon {

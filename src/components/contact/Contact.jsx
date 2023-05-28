@@ -128,7 +128,7 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-              <button className="button button_flex" data-aos="flip-right"  data-aos-delay="800">
+              <button className="button button_flex justify_center" data-aos="flip-right"  data-aos-delay="800">
                 Send Message
                 <svg
                   className="button_icon"

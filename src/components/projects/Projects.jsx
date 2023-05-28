@@ -1,8 +1,15 @@
 import React from "react";
 import Project from "./Project";
-import covid from "../../assets/covid.png";
-import expense from "../../assets/expense.png";
-import shopping from "../../assets/shopping.png";
+import BankistApp from "../../assets/Bankist-App.png";
+import BankistSite from "../../assets/BankistSite.png";
+import DrogoSurvey from "../../assets/DrogoSurvey.png";
+import MaptyApp from "../../assets/MaptyApp.png";
+import RandomGame from "../../assets/RandomGame.png";
+import DiceLuck from "../../assets/DiceLuck.png";
+import SnakeGame from "../../assets/SnakeGame.png";
+import TicTac from "../../assets/TicTac.png";
+import BookLand from "../../assets/BookLand.png";
+import Createsmart from "../../assets/Createsmart.png";
 import "./Projects.css";
 
 const Projects = () => {
@@ -15,14 +22,21 @@ const Projects = () => {
         Most recent work
       </span>
 
-      <div className="projects_container container grid">
+      {/* <div className="projects_container container grid"> */}
         <Project
           projects={[
             {
-              imageURL: covid,
+              imageURL: Createsmart,
+              title: "Createsmart",
+              // github: "https://github.com",
+              demo: "https://app.createsmart.io",
+              // description: ``,
+            },
+            {
+              imageURL: BookLand,
               title: "Book Land",
-              github: "https://github.com",
-              demo: "https://bookland.eduard-petrescu.ro",
+              // github: "https://github.com",
+              demo: "https://effulgent-klepon-2a49e4.netlify.app",
               description: `
               <p>
               Book Land is a web application that allows users to search for books using the Google Books API. The application has a homepage with a user interface that provides a pleasant and easy-to-use experience for users. The user need to create an account by signing up or logging in to access application.
@@ -46,20 +60,64 @@ const Projects = () => {
               `,
             },
             {
-              imageURL: expense,
-              title: "Expense Tracker App",
-              github: "https://github.com",
-              demo: "https://www.facebook.com",
+              imageURL: TicTac,
+              title: "TicTac Game",
+              // github: "https://github.com",
+              demo: "https://bright-sfogliatella-c30531.netlify.app/",
+              // description: ''
             },
             {
-              imageURL: shopping,
-              title: "Shopping Card",
-              github: "https://github.com",
-              demo: "https://www.facebook.com",
+              imageURL: SnakeGame,
+              title: "Snake Game",
+              // github: "https://github.com",
+              demo: "https://dulcet-alfajores-3749d8.netlify.app/",
+              // description: ''
+            },
+            {
+              imageURL: DiceLuck,
+              title: "Dice Luck Game",
+              // github: "https://github.com",
+              demo: "https://gleeful-alfajores-60aec8.netlify.app/",
+              // description: ''
+            },
+            {
+              imageURL: RandomGame,
+              title: "Guess My Number Game",
+              // github: "https://github.com",
+              demo: "https://famous-raindrop-0199b6.netlify.app/",
+              // description: ''
+            },
+            {
+              imageURL: MaptyApp,
+              title: "Mapty Application",
+              // github: "https://github.com",
+              demo: "https://classy-kleicha-7dfd24.netlify.app/",
+              // description: ''
+            },
+            {
+              imageURL: DrogoSurvey,
+              title: "Drogo Survey",
+              // github: "https://github.com",
+              demo: "https://remarkable-nasturtium-257d49.netlify.app/",
+              // description: ''
+            },
+            {
+              imageURL: BankistSite,
+              title: "Bankist Website",
+              // github: "https://github.com",
+              demo: "https://nimble-pothos-3ee572.netlify.app/",
+              // description: ''
+            },
+            {
+              imageURL: BankistApp,
+              title: "Bankist Application",
+              // github: "https://github.com",
+              demo: "https://incandescent-douhua-8280f7.netlify.app/",
+              // description: ''
             },
           ]}
         />
-      </div>
+      {/* </div> */}
     </section>
   );
 };
