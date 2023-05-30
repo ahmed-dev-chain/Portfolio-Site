@@ -10,6 +10,7 @@ import SnakeGame from "../../assets/SnakeGame.png";
 import TicTac from "../../assets/TicTac.png";
 import BookLand from "../../assets/BookLand.png";
 import Createsmart from "../../assets/Createsmart.png";
+import MBFX from "../../assets/MBFX.png";
 import "./Projects.css";
 
 const Projects = () => {
@@ -25,6 +26,13 @@ const Projects = () => {
       {/* <div className="projects_container container grid"> */}
         <Project
           projects={[
+            {
+              imageURL: MBFX,
+              title: "MBFX",
+              // github: "https://github.com",
+              demo: "https://mbfx.co",
+              // description: ``,
+            },
             {
               imageURL: Createsmart,
               title: "Createsmart",
