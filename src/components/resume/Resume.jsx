@@ -43,7 +43,7 @@ const Resume = () => {
             {
               title: "Front End Developer",
               location: "Capazyte - Karachi",
-              calender: "October 2020 - December 2021",
+              calender: "March 2021 - December 2021",
             },
           ]}
         />
