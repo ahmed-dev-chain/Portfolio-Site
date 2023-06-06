@@ -24,28 +24,37 @@ const Projects = () => {
       </span>
 
       {/* <div className="projects_container container grid"> */}
-        <Project
-          projects={[
-            {
-              imageURL: MBFX,
-              title: "MBFX",
-              // github: "https://github.com",
-              demo: "https://mbfx.co",
-              // description: ``,
-            },
-            {
-              imageURL: Createsmart,
-              title: "Createsmart",
-              // github: "https://github.com",
-              demo: "https://app.createsmart.io",
-              // description: ``,
-            },
-            {
-              imageURL: BookLand,
-              title: "Book Land",
-              // github: "https://github.com",
-              demo: "https://effulgent-klepon-2a49e4.netlify.app",
-              description: `
+      <Project
+        projects={[
+          {
+            imageURL: MBFX,
+            title: "MBFX",
+            // github: "https://github.com",
+            demo: "https://mbfx.co",
+            description: `<p>MBFX is a trading company website that uses HTML, CSS, and JavaScript.
+             It offers an easy-to-use interface for trading stocks, commodities, currencies, and 
+             indices. With real-time market data and analysis tools, users can make informed decisions.
+              MBFX prioritizes security and provides customer support for a reliable trading 
+              experience.</p>`,
+          },
+          {
+            imageURL: Createsmart,
+            title: "Createsmart",
+            // github: "https://github.com",
+            demo: "https://app.createsmart.io",
+            description: `<p>
+            Createsmart is an innovative project I collaborated on as a ReactJS developer. 
+            It is a versatile tool that empowers users to design presentations and export them as
+             HTML. Additionally, it enables the creation of visually appealing email templates, 
+             small website pages, and the execution of email campaigns. With Createsmart, users 
+             can effortlessly enhance their communication and marketing strategies.</p>`,
+          },
+          {
+            imageURL: BookLand,
+            title: "Book Land",
+            // github: "https://github.com",
+            demo: "https://effulgent-klepon-2a49e4.netlify.app",
+            description: `
               <p>
               Book Land is a web application that allows users to search for books using the Google Books API. The application has a homepage with a user interface that provides a pleasant and easy-to-use experience for users. The user need to create an account by signing up or logging in to access application.
               </p>
@@ -66,65 +75,65 @@ const Projects = () => {
               Overall, Book Land is a comprehensive web application that provides a seamless and user-friendly experience for book lovers who want to explore and discover new books in an organized and efficient way.
               </p>
               `,
-            },
-            {
-              imageURL: TicTac,
-              title: "TicTac Game",
-              // github: "https://github.com",
-              demo: "https://bright-sfogliatella-c30531.netlify.app/",
-              // description: ''
-            },
-            {
-              imageURL: SnakeGame,
-              title: "Snake Game",
-              // github: "https://github.com",
-              demo: "https://dulcet-alfajores-3749d8.netlify.app/",
-              // description: ''
-            },
-            {
-              imageURL: DiceLuck,
-              title: "Dice Luck Game",
-              // github: "https://github.com",
-              demo: "https://gleeful-alfajores-60aec8.netlify.app/",
-              // description: ''
-            },
-            {
-              imageURL: RandomGame,
-              title: "Guess My Number Game",
-              // github: "https://github.com",
-              demo: "https://famous-raindrop-0199b6.netlify.app/",
-              // description: ''
-            },
-            {
-              imageURL: MaptyApp,
-              title: "Mapty Application",
-              // github: "https://github.com",
-              demo: "https://classy-kleicha-7dfd24.netlify.app/",
-              // description: ''
-            },
-            {
-              imageURL: DrogoSurvey,
-              title: "Drogo Survey",
-              // github: "https://github.com",
-              demo: "https://remarkable-nasturtium-257d49.netlify.app/",
-              // description: ''
-            },
-            {
-              imageURL: BankistSite,
-              title: "Bankist Website",
-              // github: "https://github.com",
-              demo: "https://nimble-pothos-3ee572.netlify.app/",
-              // description: ''
-            },
-            {
-              imageURL: BankistApp,
-              title: "Bankist Application",
-              // github: "https://github.com",
-              demo: "https://incandescent-douhua-8280f7.netlify.app/",
-              // description: ''
-            },
-          ]}
-        />
+          },
+          {
+            imageURL: TicTac,
+            title: "TicTac Game",
+            // github: "https://github.com",
+            demo: "https://bright-sfogliatella-c30531.netlify.app/",
+            description: '<p>Made a small game called tictac for fun.</p>'
+          },
+          {
+            imageURL: SnakeGame,
+            title: "Snake Game",
+            // github: "https://github.com",
+            demo: "https://dulcet-alfajores-3749d8.netlify.app/",
+            description: '<p>Made Snake game using react js just for polishing my skills.</p>'
+          },
+          {
+            imageURL: DiceLuck,
+            title: "Dice Luck Game",
+            // github: "https://github.com",
+            demo: "https://gleeful-alfajores-60aec8.netlify.app/",
+            description: '<p>Created a personal project for practice. A multiplayer game.</p>'
+          },
+          {
+            imageURL: RandomGame,
+            title: "Guess My Number Game",
+            // github: "https://github.com",
+            demo: "https://famous-raindrop-0199b6.netlify.app/",
+            description: '<p>Created a personal project for practice.</p>'
+          },
+          {
+            imageURL: MaptyApp,
+            title: "Mapty Application",
+            // github: "https://github.com",
+            demo: "https://classy-kleicha-7dfd24.netlify.app/",
+            description: '<p>Created a personal project for practice.</p>'
+          },
+          {
+            imageURL: DrogoSurvey,
+            title: "Drogo Survey",
+            // github: "https://github.com",
+            demo: "https://remarkable-nasturtium-257d49.netlify.app/",
+            description: '<p>Created a personal project for practice. A Survey Application.</p>'
+          },
+          {
+            imageURL: BankistSite,
+            title: "Bankist Website",
+            // github: "https://github.com",
+            demo: "https://nimble-pothos-3ee572.netlify.app/",
+            description: '<p>Created a personal project for practice.</p>'
+          },
+          {
+            imageURL: BankistApp,
+            title: "Bankist Application",
+            // github: "https://github.com",
+            demo: "https://incandescent-douhua-8280f7.netlify.app/",
+            description: '<p>Created a personal project for practice. A multiplayer game.</p>'
+          },
+        ]}
+      />
       {/* </div> */}
     </section>
   );

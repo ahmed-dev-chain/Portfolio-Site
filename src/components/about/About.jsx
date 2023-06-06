@@ -26,7 +26,7 @@ const About = () => {
             <div className="about_box" data-aos="fade-left" data-aos-delay="0">
               <i className="uil uil-award about_icon"></i>
               <h3 className="about_title">Experience</h3>
-              <span className="about_subtitle">2+ years</span>
+              <span className="about_subtitle">1.5 year</span>
             </div>
             <div
               className="about_box"
@@ -35,7 +35,7 @@ const About = () => {
             >
               <i className="uil uil-suitcase-alt about_icon"></i>
               <h3 className="about_title">Worked On</h3>
-              <span className="about_subtitle">5+ projects</span>
+              <span className="about_subtitle">3+ projects</span>
             </div>
             <div
               className="about_box"

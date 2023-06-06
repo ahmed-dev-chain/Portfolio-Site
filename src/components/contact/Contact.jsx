@@ -76,10 +76,10 @@ const Contact = () => {
               <div className="contact_card" data-aos="fade-up" data-aos-delay="700">
                 <i className="uil uil-linkedin contact_card_icon"></i>
                 <h3 className="contact_card_title">Linkedin</h3>
-                <span className="contact_card_data">muhammad-ahmed-271b88229</span>
+                <span className="contact_card_data">m-ahmed-dev</span>
 
                 <a
-                  href="https://www.linkedin.com/in/muhammad-ahmed-271b88229/"
+                  href="https://www.linkedin.com/in/m-ahmed-dev"
                   rel="noreferrer"
                   className="contact_button"
                   target="_blank"

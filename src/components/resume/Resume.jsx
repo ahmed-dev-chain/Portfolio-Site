@@ -16,7 +16,7 @@ const Resume = () => {
             {
               title: "Bachelor In Computer Science",
               location: "Virtual University, Lahore",
-              calender: "2023 - 2028",
+              calender: "Present",
             },
             {
               title: "Intermediate",
@@ -39,12 +39,7 @@ const Resume = () => {
               title: "React JS Developer",
               location: "Business Solutions And Services - Lahore",
               calender: "January 2022 - Present",
-            },
-            {
-              title: "Front End Developer",
-              location: "Capazyte - Karachi",
-              calender: "October 2020 - December 2021",
-            },
+            }
           ]}
         />
       </div>
