@@ -52,7 +52,7 @@ const Projects = () => {
           {
             imageURL: BookLand,
             title: "Book Land",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/Book-Land-Fe",
             demo: "https://effulgent-klepon-2a49e4.netlify.app",
             description: `
               <p>
@@ -79,58 +79,62 @@ const Projects = () => {
           {
             imageURL: TicTac,
             title: "TicTac Game",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/React-TicTac",
             demo: "https://bright-sfogliatella-c30531.netlify.app/",
-            description: '<p>Made a small game called tictac for fun.</p>'
+            description: "<p>Made a small game called tictac for fun.</p>",
           },
           {
             imageURL: SnakeGame,
             title: "Snake Game",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/React-Snake-Game",
             demo: "https://dulcet-alfajores-3749d8.netlify.app/",
-            description: '<p>Made Snake game using react js just for polishing my skills.</p>'
+            description:
+              "<p>Made Snake game using react js just for polishing my skills.</p>",
           },
           {
             imageURL: DiceLuck,
             title: "Dice Luck Game",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/Pig-Game-Multiplayer",
             demo: "https://gleeful-alfajores-60aec8.netlify.app/",
-            description: '<p>Created a personal project for practice. A multiplayer game.</p>'
+            description:
+              "<p>Created a personal project for practice. A multiplayer game.</p>",
           },
           {
             imageURL: RandomGame,
             title: "Guess My Number Game",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/Number-Guess-Game",
             demo: "https://famous-raindrop-0199b6.netlify.app/",
-            description: '<p>Created a personal project for practice.</p>'
+            description: "<p>Created a personal project for practice.</p>",
           },
           {
             imageURL: MaptyApp,
             title: "Mapty Application",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/Mapty-Map-Your-Fitness",
             demo: "https://classy-kleicha-7dfd24.netlify.app/",
-            description: '<p>Created a personal project for practice.</p>'
+            description: "<p>Created a personal project for practice.</p>",
           },
           {
             imageURL: DrogoSurvey,
             title: "Drogo Survey",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/Drago-Survey",
             demo: "https://remarkable-nasturtium-257d49.netlify.app/",
-            description: '<p>Created a personal project for practice. A Survey Application.</p>'
+            description:
+              "<p>Created a personal project for practice. A Survey Application.</p>",
           },
           {
             imageURL: BankistSite,
             title: "Bankist Website",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/Bankist-Website",
             demo: "https://nimble-pothos-3ee572.netlify.app/",
-            description: '<p>Created a personal project for practice.</p>'
+            description: "<p>Created a personal project for practice.</p>",
           },
           {
             imageURL: BankistApp,
             title: "Bankist Application",
-            // github: "https://github.com",
+            github: "https://github.com/khalizero/Bankist-Application",
             demo: "https://incandescent-douhua-8280f7.netlify.app/",
-            description: '<p>Created a personal project for practice. A multiplayer game.</p>'
+            description:
+              "<p>Created a personal project for practice. A multiplayer game.</p>",
           },
         ]}
       />

@@ -5,8 +5,12 @@ import ResumeBox from "./ResumeBox";
 const Resume = () => {
   return (
     <section className="resume section" id="resume">
-      <h2 className="section_title" data-aos="zoom-in">Resume</h2>
-      <span className="section_subtitle" data-aos="zoom-in">My personal journey</span>
+      <h2 className="section_title" data-aos="zoom-in">
+        Resume
+      </h2>
+      <span className="section_subtitle" data-aos="zoom-in">
+        My personal journey
+      </span>
 
       <div className="resume_container container grid">
         <ResumeBox
@@ -36,10 +40,10 @@ const Resume = () => {
           iconClass="briefcase-alt"
           qualification={[
             {
-              title: "React JS Developer",
+              title: "MERN Stack Developer",
               location: "Business Solutions And Services - Lahore",
               calender: "January 2022 - Present",
-            }
+            },
           ]}
         />
       </div>

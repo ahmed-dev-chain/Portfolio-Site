@@ -74,15 +74,16 @@ const Home = () => {
               />
             </h3>
             <p className="home_description" data-aos="zoom-in">
-              Software developer with 1.5 years of expertise in React.js and in
-              React Native(0.5 year). I have a solid understanding of building
-              user interfaces and web applications using React.js, a popular
-              JavaScript library. I also have some familiarity with Node
-              Js/Express Js, a server-side JavaScript runtime, and with MongoDB,
-              a NoSQL database, to store and retrieve data. With diverse skill
-              set and experience in front-end and mobile development, I am
-              well-equipped to contribute to projects that require React.js and
-              React Native knowledge.
+              I am a <b> Full Stack developer </b> with 2+ years of experience
+              with a strong focus on frontend. I have completed multiple
+              certifications in React, React Native, and JavaScript from Udemy.
+              I am passionate about innovation and creating dynamic and
+              user-friendly solutions using the MERN stack and other
+              technologies.I have participated in code reviews, debugging, and
+              troubleshooting, demonstrating strong problem-solving skills and
+              attention to detail. I thrive in collaborative environments, where
+              I can contribute to the team's endeavors with my unique ideas and
+              creativity.
             </p>
             <a
               href="https://github.com/khalizero"

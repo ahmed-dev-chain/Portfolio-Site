@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import aboutImg from "../../assets/About.png";
-import CV from '../../assets/Muhammad-Ahmed.pdf'
+import CV from "../../assets/Muhammad-Ahmed.pdf";
 
 const About = () => {
   return (
@@ -26,7 +26,7 @@ const About = () => {
             <div className="about_box" data-aos="fade-left" data-aos-delay="0">
               <i className="uil uil-award about_icon"></i>
               <h3 className="about_title">Experience</h3>
-              <span className="about_subtitle">1.5 year</span>
+              <span className="about_subtitle">2 years</span>
             </div>
             <div
               className="about_box"
@@ -35,7 +35,7 @@ const About = () => {
             >
               <i className="uil uil-suitcase-alt about_icon"></i>
               <h3 className="about_title">Worked On</h3>
-              <span className="about_subtitle">3+ projects</span>
+              <span className="about_subtitle">Few projects</span>
             </div>
             <div
               className="about_box"
@@ -44,15 +44,24 @@ const About = () => {
             >
               <i className="uil uil-graduation-cap about_icon"></i>
               <h3 className="about_title">Qulafication</h3>
-              <span className="about_subtitle">Undergraduate</span>
+              <span className="about_subtitle">BSCS Student</span>
             </div>
           </div>
 
           <p className="about_description" data-aos="zoom-in">
-            I am Muhammad Ahmed, Front-End developer from Pakistan and currently
-            working as a React JS developer. My expertise lies in MERN Stack and 
-            can work independently and as part of a team, and comfortable with 
-            agile development methods.
+            I am Muhammad Ahmed, MERN Stack developer from Pakistan and
+            currently working as a React JS developer. My expertise lies in MERN
+            Stack and can work independently and as part of a team, and
+            comfortable with agile development methods.
+            <br />I have participated in code reviews, debugging, and
+            troubleshooting, demonstrating strong problem-solving skills and
+            attention to detail. I thrive in collaborative environments, where I
+            can contribute to the team's endeavors with my unique ideas and
+            creativity. I am dedicated to staying up-to-date with the latest
+            industry trends and best practices, ensuring that I can offer
+            cutting-edge solutions to meet the needs of any project. Let's
+            connect and explore how my skills and experience can contribute to
+            the success of your next development endeavor.
           </p>
 
           <a
