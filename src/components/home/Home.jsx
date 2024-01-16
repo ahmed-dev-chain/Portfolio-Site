@@ -74,19 +74,18 @@ const Home = () => {
               />
             </h3>
             <p className="home_description" data-aos="zoom-in">
-              Software developer with 1.5 years
-              of expertise in React.js and in React
-              Native(0.5 year). I have a solid understanding of building user interfaces
-              and web applications using React.js, a popular JavaScript library.
-              I also have some familiarity with Node Js/Express Js, a server-side JavaScript
-              runtime, and with MongoDB, a NoSQL database, to store
-              and retrieve data. With  diverse skill set and experience in
-              front-end and mobile development, I am well-equipped to
-              contribute to projects that require React.js and React Native
-              knowledge.
+              Software developer with 1.5 years of expertise in React.js and in
+              React Native(0.5 year). I have a solid understanding of building
+              user interfaces and web applications using React.js, a popular
+              JavaScript library. I also have some familiarity with Node
+              Js/Express Js, a server-side JavaScript runtime, and with MongoDB,
+              a NoSQL database, to store and retrieve data. With diverse skill
+              set and experience in front-end and mobile development, I am
+              well-equipped to contribute to projects that require React.js and
+              React Native knowledge.
             </p>
             <a
-              href="https://github.com/aw708596?tab=repositories"
+              href="https://github.com/khalizero"
               rel="noreferrer"
               className="button button_flex"
               target="_blank"
