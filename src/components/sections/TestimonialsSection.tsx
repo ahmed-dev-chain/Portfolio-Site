@@ -5,7 +5,7 @@ export function TestimonialsSection() {
   const testimonials = portfolioContent.testimonials;
 
   return (
-    <section id="testimonials" className="mx-auto mt-28 max-w-6xl px-6">
+    <section id="testimonials" className="mx-auto mt-28 max-w-6xl px-6 text-slate-100">
       <SectionHeading
         eyebrow="Kind words"
         title="Trusted by founders, product leads, and growth teams."
@@ -15,14 +15,14 @@ export function TestimonialsSection() {
         {testimonials.map((testimonial) => (
           <figure
             key={testimonial.name}
-            className="flex h-full flex-col justify-between gap-6 rounded-3xl border border-primary-500/10 bg-white/90 p-8 shadow-lg shadow-primary-500/5"
+            className="flex h-full flex-col justify-between gap-6 rounded-[32px] border border-white/10 bg-white/5 p-8 text-slate-200 shadow-xl shadow-primary-500/20 backdrop-blur"
           >
-            <blockquote className="text-lg font-medium text-slate-700">
+            <blockquote className="text-lg font-medium text-slate-100">
               “{testimonial.quote}”
             </blockquote>
-            <figcaption className="text-sm text-slate-500">
-              <p className="font-semibold text-surface-900">{testimonial.name}</p>
-              <p>
+            <figcaption className="text-sm text-slate-400">
+              <p className="font-semibold text-white">{testimonial.name}</p>
+              <p className="text-slate-300/90">
                 {testimonial.role} · {testimonial.company}
               </p>
             </figcaption>

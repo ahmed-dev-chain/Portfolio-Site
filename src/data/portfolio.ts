@@ -7,7 +7,7 @@ export const portfolioContent: PortfolioContent = {
     subHeadline:
       "Product-focused engineer blending React, Next.js, and thoughtful UX to ship delightful web experiences that scale.",
     availability: "Currently open to senior engineering roles & select product collaborations.",
-    location: "Karachi, Pakistan · Remote-ready",
+    location: "Pakistan · Remote-ready",
     ctaPrimary: {
       label: "Start a project",
       href: "mailto:hello@khalizero.com?subject=Let's build something remarkable",
@@ -65,7 +65,7 @@ export const portfolioContent: PortfolioContent = {
     {
       company: "MBFX Tech",
       role: "Lead UI Engineer",
-      location: "Karachi, PK",
+      location: "Remote",
       start: "2019",
       end: "2021",
       summary: "Headed UI modernization for trading and education web platforms across multiple brands.",

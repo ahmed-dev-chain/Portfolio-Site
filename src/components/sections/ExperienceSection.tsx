@@ -5,33 +5,38 @@ export function ExperienceSection() {
   const experiences = portfolioContent.experiences;
 
   return (
-    <section id="experience" className="mx-auto mt-28 max-w-6xl px-6">
+    <section id="experience" className="mx-auto mt-28 max-w-6xl px-6 text-slate-100">
       <SectionHeading
         eyebrow="Experience"
         title="Recent roles where I owned product delivery end-to-end."
         description="Strategic partner across engineering, design, and product. I lead front-end modernization initiatives, craft design systems, and foster high-bandwidth collaboration with stakeholders."
       />
-      <div className="mt-12 space-y-12">
-        {experiences.map((experience, index) => (
+      <div className="mt-12 space-y-10">
+        {experiences.map((experience) => (
           <article
             key={experience.company}
-            className="relative grid gap-6 rounded-3xl border border-primary-500/10 bg-white/90 p-8 shadow-lg shadow-primary-500/5 lg:grid-cols-[240px,1fr]"
+            className="grid gap-6 rounded-[32px] border border-white/10 bg-white/5 p-8 shadow-xl shadow-primary-500/20 backdrop-blur lg:grid-cols-[250px,1fr]"
           >
             <div className="flex flex-col gap-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-primary-500">
+              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-primary-200">
                 {experience.start} — {experience.end}
               </p>
-              <h3 className="font-display text-xl font-semibold text-surface-900">{experience.role}</h3>
-              <p className="text-sm text-slate-500">{experience.company}</p>
-              <p className="text-xs font-medium uppercase tracking-[0.3em] text-slate-400">
+              <h3 className="font-display text-2xl font-semibold text-white">
+                {experience.role}
+              </h3>
+              <p className="text-sm text-slate-300">{experience.company}</p>
+              <p className="text-xs font-medium uppercase tracking-[0.35em] text-slate-400">
                 {experience.location}
               </p>
             </div>
-            <div className="space-y-4 text-sm text-slate-600">
-              <p className="text-base text-slate-600">{experience.summary}</p>
+            <div className="space-y-5 text-sm text-slate-200">
+              <p className="text-base text-slate-200/90">{experience.summary}</p>
               <ul className="space-y-3">
                 {experience.achievements.map((achievement) => (
-                  <li key={achievement} className="flex gap-3 rounded-2xl bg-surface-100/70 p-4">
+                  <li
+                    key={achievement}
+                    className="flex gap-3 rounded-2xl border border-white/10 bg-slate-950/70 p-4"
+                  >
                     <span className="mt-1 h-2 w-2 flex-none rounded-full bg-primary-400" />
                     <span>{achievement}</span>
                   </li>
@@ -39,15 +44,15 @@ export function ExperienceSection() {
               </ul>
               <div className="flex flex-wrap gap-2">
                 {experience.stack.map((tech) => (
-                  <span key={tech} className="rounded-full bg-primary-500/10 px-3 py-1 text-xs font-medium text-primary-600">
+                  <span
+                    key={tech}
+                    className="rounded-full border border-primary-400/30 bg-primary-500/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-primary-100"
+                  >
                     {tech}
                   </span>
                 ))}
               </div>
             </div>
-            {index !== experiences.length - 1 && (
-              <div className="absolute -bottom-9 left-12 hidden h-16 w-px bg-gradient-to-b from-primary-500/30 to-transparent lg:block" />
-            )}
           </article>
         ))}
       </div>
