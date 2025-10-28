@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "../../tailwind-plugins/tailwindcss-animate.js";
+@plugin "../../tailwind-plugins/tailwindcss-animate.mjs";
 
 @source "./src/app/**/*.{ts,tsx,js,jsx,mdx}";
 @source "./src/components/**/*.{ts,tsx,js,jsx,mdx}";
