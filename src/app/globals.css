@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@plugin "../../tailwind-plugins/tailwindcss-animate.js";
+
+@source "./src/app/**/*.{ts,tsx,js,jsx,mdx}";
+@source "./src/components/**/*.{ts,tsx,js,jsx,mdx}";
+@source "./src/lib/**/*.{ts,tsx,js,jsx,mdx}";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  --font-display: var(--font-playfair), "Playfair Display", ui-serif, Georgia, Cambria,
+    "Times New Roman", serif;
+
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2ff;
+  --color-primary-300: #a5b4ff;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+
+  --color-accent-100: #fdf2f8;
+  --color-accent-200: #fbcfe8;
+  --color-accent-300: #f472b6;
+  --color-accent-400: #ec4899;
+  --color-accent-500: #db2777;
+  --color-accent-600: #be185d;
+
+  --color-aurora-100: #cffafe;
+  --color-aurora-300: #67e8f9;
+  --color-aurora-500: #22d3ee;
+  --color-aurora-600: #0891b2;
+
+  --color-surface-50: #f5f7ff;
+  --color-surface-100: #e9ecff;
+  --color-surface-200: #c7d3ff;
+  --color-surface-300: #a0b2ff;
+  --color-surface-800: #141930;
+  --color-surface-900: #0b1020;
+  --color-surface-950: #050816;
+
+  --background-image-grid-light: radial-gradient(rgba(99, 102, 241, 0.12) 1px, transparent 1px);
+  --background-image-grid-dark: radial-gradient(rgba(22, 163, 222, 0.12) 1px, transparent 1px);
+  --background-image-gradient-radial: radial-gradient(
+      circle at 20% 15%,
+      rgba(99, 102, 241, 0.35),
+      transparent 55%
+    ),
+    radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.25), transparent 55%);
+
+  --shadow-glow: 0 0 55px rgba(79, 70, 229, 0.35);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark light;
+  }
+
+  ::selection {
+    @apply bg-primary-400/80 text-white;
+  }
+
+  body {
+    @apply bg-surface-950 text-surface-100 antialiased;
+    background-image:
+      radial-gradient(circle at 18% 20%, rgba(129, 140, 248, 0.35), transparent 55%),
+      radial-gradient(circle at 82% 18%, rgba(14, 165, 233, 0.25), transparent 50%),
+      radial-gradient(circle at 45% 78%, rgba(236, 72, 153, 0.2), transparent 55%),
+      linear-gradient(180deg, #050a1f 0%, #02030d 75%, #010208 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: -50vh -20vw;
+    background-image:
+      radial-gradient(1px 1px at 40px 60px, rgba(255, 255, 255, 0.7) 50%, transparent 60%),
+      radial-gradient(1px 1px at 120px 140px, rgba(129, 140, 248, 0.4) 50%, transparent 60%),
+      radial-gradient(2px 2px at 200px 80px, rgba(56, 189, 248, 0.35) 50%, transparent 70%);
+    background-size: 220px 220px, 180px 180px, 260px 260px;
+    opacity: 0.4;
+    filter: drop-shadow(0 0 6px rgba(129, 140, 248, 0.35));
+    animation: cosmicTwinkle 18s ease-in-out infinite;
+    pointer-events: none;
+    z-index: -2;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: -30vh -30vw;
+    background-image:
+      radial-gradient(60% 45% at 20% 30%, rgba(37, 99, 235, 0.35), transparent 80%),
+      radial-gradient(50% 40% at 75% 20%, rgba(14, 165, 233, 0.25), transparent 80%),
+      radial-gradient(55% 35% at 40% 80%, rgba(236, 72, 153, 0.2), transparent 80%);
+    filter: blur(120px);
+    opacity: 0.45;
+    animation: auroraDrift 28s ease-in-out infinite alternate;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    z-index: -1;
+  }
+
+  .dark body {
+    @apply bg-surface-950 text-slate-100;
+    background-image:
+      radial-gradient(circle at 20% 25%, rgba(129, 140, 248, 0.45), transparent 55%),
+      radial-gradient(circle at 78% 20%, rgba(14, 165, 233, 0.3), transparent 50%),
+      radial-gradient(circle at 48% 82%, rgba(236, 72, 153, 0.25), transparent 55%),
+      linear-gradient(180deg, #01030d 0%, #00010a 75%, #000008 100%);
+  }
+
+  a {
+    @apply text-primary-300 transition-colors hover:text-primary-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950;
+  }
+}
+
+@keyframes cosmicTwinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: translate3d(-2%, -1%, 0) scale(1.02);
+  }
+}
+
+@keyframes auroraDrift {
+  0% {
+    transform: translate3d(-10%, -5%, 0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate3d(6%, 4%, 0) rotate(2deg) scale(1.05);
+  }
+  100% {
+    transform: translate3d(-6%, 6%, 0) rotate(-1deg) scale(1.02);
+  }
+}
+
+@keyframes slowOrbit {
+  0% {
+    transform: rotate(0deg) translateX(12px) rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) translateX(12px) rotate(-180deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(12px) rotate(-360deg);
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-xl border border-white/10 shadow-glow ring-1 ring-primary-500/20;
+  }
+
+  .theme-card {
+    @apply bg-white/10 backdrop-blur-xl border border-white/10 shadow-glow ring-1 ring-primary-400/25 rounded-3xl;
+  }
+}
+
+@layer utilities {
+  .bg-nebula {
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(79, 70, 229, 0.35), transparent 55%),
+      radial-gradient(circle at 75% 30%, rgba(14, 165, 233, 0.3), transparent 55%),
+      radial-gradient(circle at 42% 78%, rgba(236, 72, 153, 0.25), transparent 55%);
+    background-blend-mode: screen;
+  }
+
+  .bg-starfield-soft {
+    background-image:
+      radial-gradient(1px 1px at 20px 40px, rgba(255, 255, 255, 0.6) 50%, transparent 60%),
+      radial-gradient(1px 1px at 80px 120px, rgba(94, 234, 212, 0.4) 50%, transparent 60%);
+    background-size: 160px 160px;
+  }
+
+  .animate-cosmic-twinkle {
+    animation: cosmicTwinkle 16s ease-in-out infinite;
+  }
+
+  .animate-aurora {
+    animation: auroraDrift 24s ease-in-out infinite alternate;
+  }
+
+  .animate-orbit {
+    animation: slowOrbit 20s linear infinite;
+  }
+}
