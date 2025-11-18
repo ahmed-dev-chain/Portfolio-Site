@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 import { SocialIcon } from "@/components/shared/SocialIcon";
-import { portfolioContent } from "@/data/portfolio";
+import { portfolioContent } from "@/data/portfolio.data";
 
 export function ContactSection() {
   const { contact, hero } = portfolioContent;
+  const phoneLink = contact.phone?.replace(/[^+\d]/g, "");
 
   return (
     <section id="contact" className="mx-auto mt-28 max-w-6xl px-6 text-slate-100">
@@ -32,7 +33,7 @@ export function ContactSection() {
               {contact.phone && (
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-[0.35em] text-primary-200">Direct line</p>
-                  <Link href={`tel:${contact.phone}`} className="mt-1 inline-flex items-center gap-2 text-lg font-semibold text-white transition hover:text-primary-200">
+                  <Link href={`tel:${phoneLink ?? contact.phone}`} className="mt-1 inline-flex items-center gap-2 text-lg font-semibold text-white transition hover:text-primary-200">
                     {contact.phone}
                   </Link>
                 </div>

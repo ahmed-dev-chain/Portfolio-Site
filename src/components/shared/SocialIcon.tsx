@@ -1,4 +1,4 @@
-import type { SocialLink } from "@/types/portfolio";
+import type { SocialLink } from "@/types/portfolio.types";
 
 type Props = {
   icon: SocialLink["icon"];

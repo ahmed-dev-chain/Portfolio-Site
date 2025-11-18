@@ -4,7 +4,6 @@ import {
   HiOutlineBriefcase,
   HiOutlineSparkles,
   HiOutlineBeaker,
-  HiOutlineChatBubbleLeftRight,
   HiOutlineEnvelope,
 } from "react-icons/hi2";
 
@@ -19,7 +18,6 @@ export const NAVIGATION_LINKS: NavigationLink[] = [
   { label: "Experience", href: "#experience", icon: HiOutlineBriefcase },
   { label: "Projects", href: "#projects", icon: HiOutlineSparkles },
   { label: "Skills", href: "#skills", icon: HiOutlineBeaker },
-  { label: "Testimonials", href: "#testimonials", icon: HiOutlineChatBubbleLeftRight },
   { label: "Contact", href: "#contact", icon: HiOutlineEnvelope },
 ];
 

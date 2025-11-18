@@ -8,9 +8,9 @@ import {
   NAV_FLOATING_ACTIVATION_OFFSET,
   NAV_PRIMARY_SOCIAL_LIMIT,
   NAV_SCROLL_HIDE_OFFSET,
-} from "@/constants/navigation";
+} from "@/constants/navigation.constants";
 import { SocialIcon } from "@/components/shared/SocialIcon";
-import { portfolioContent } from "@/data/portfolio";
+import { portfolioContent } from "@/data/portfolio.data";
 
 export function Header() {
   const [isCollapsed, setIsCollapsed] = useState(false);

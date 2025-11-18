@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { portfolioContent } from "@/data/portfolio";
+import { portfolioContent } from "@/data/portfolio.data";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export function ProjectsSection() {

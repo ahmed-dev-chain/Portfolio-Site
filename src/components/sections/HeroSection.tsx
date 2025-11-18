@@ -1,28 +1,27 @@
 import Link from "next/link";
 import { SocialIcon } from "@/components/shared/SocialIcon";
-import { portfolioContent } from "@/data/portfolio";
+import { portfolioContent } from "@/data/portfolio.data";
 
 const heroHighlights = [
   {
-    title: "+18% onboarding lift",
+    title: "Modular commerce core",
     description:
-      "Experiment-led journeys that tightened activation loops for a SaaS growth team.",
+      "NestJS + MySQL architecture powering vendor onboarding, payouts, and Stripe Connect flows.",
   },
   {
-    title: "40% faster releases",
+    title: "IoT ops telemetry",
     description:
-      "Design system adoption across three squads with pixel-ready, themeable components.",
+      "ShipSense dashboards surface shipment anomalies with live sensor data and actionable alerts.",
   },
   {
-    title: "97+ Lighthouse",
+    title: "AI interview prep",
     description:
-      "Performance budgets wired into CI with observability for the surfaces that matter.",
+      "Role-based experiences with Supabase auth, adaptive questions, and mentor dashboards.",
   },
 ];
 
 export function HeroSection() {
   const hero = portfolioContent.hero;
-  const primaryTestimonial = portfolioContent.testimonials[0];
 
   return (
     <section
@@ -118,17 +117,6 @@ export function HeroSection() {
             ))}
           </div>
 
-          {/* {primaryTestimonial ? (
-            <div className="rounded-3xl border border-white/10 bg-slate-950/70 p-6 text-sm text-slate-200 shadow-inner shadow-primary-500/15">
-              <p className="text-base leading-relaxed text-slate-50">
-                “{primaryTestimonial.quote}”
-              </p>
-              <p className="mt-4 text-xs font-semibold uppercase tracking-[0.35em] text-primary-200">
-                {primaryTestimonial.name} · {primaryTestimonial.role},{" "}
-                {primaryTestimonial.company}
-              </p>
-            </div>
-          ) : null} */}
         </div>
       </div>
 

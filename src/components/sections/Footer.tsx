@@ -14,10 +14,10 @@ export function Footer() {
             <Link href="#hero" className="hover:text-primary-100">
               Back to top
             </Link>
-            <Link href="https://github.com/khalizero" className="hover:text-primary-100">
+            <Link href="https://github.com/ahmed-dev-chain" className="hover:text-primary-100">
               GitHub
             </Link>
-            <Link href="https://www.linkedin.com/in/khalizero" className="hover:text-primary-100">
+            <Link href="https://www.linkedin.com/in/m-ahmed-dev/" className="hover:text-primary-100">
               LinkedIn
             </Link>
           </div>

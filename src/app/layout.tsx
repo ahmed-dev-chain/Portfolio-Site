@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Header } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
-import { portfolioContent } from "@/data/portfolio";
+import { portfolioContent } from "@/data/portfolio.data";
 import "./globals.css";
 
 const inter = Inter({
@@ -19,20 +19,21 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://khalizero.com"),
   title: {
-    default: "Muhammad Ahmed · Senior Product Engineer",
+    default: "Muhammad Ahmed · Senior MERN Stack Developer",
     template: "%s · Muhammad Ahmed",
   },
   description:
-    "Product-minded senior engineer crafting high-performing web apps with Next.js, thoughtful UX, and measurable impact. Partnering with teams to ship refined digital products.",
+    "Senior MERN Stack Developer specializing in Next.js, NestJS, Stripe, and scalable dashboards. Building SaaS, fintech, and IoT products end-to-end with clean TypeScript architectures.",
   keywords: [
     "Muhammad Ahmed",
     "khalizero",
-    "Senior Frontend Engineer",
-    "Next.js developer",
-    "Product designer",
-    "Tailwind CSS",
-    "React consultant",
-    "Design systems",
+    "Senior MERN Stack Developer",
+    "Next.js engineer",
+    "NestJS backend",
+    "TypeScript full-stack",
+    "Stripe Connect developer",
+    "IoT dashboards",
+    "Blockchain payments",
     "Full-stack engineer Pakistan",
   ],
   authors: [{ name: "Muhammad Ahmed", url: "https://khalizero.com" }],
@@ -44,9 +45,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://khalizero.com",
-    title: "Muhammad Ahmed · Senior Product Engineer",
+    title: "Muhammad Ahmed · Senior MERN Stack Developer",
     description:
-      "Next.js expert blending design and engineering to launch performant, accessible products with measurable growth.",
+      "MERN expert blending Next.js, NestJS, and Stripe integrations to launch scalable SaaS, fintech, and IoT products.",
     images: [
       {
         url: "/images/me.png",
@@ -59,9 +60,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     creator: "@khalizero",
-    title: "Muhammad Ahmed · Product-minded Senior Engineer",
+    title: "Muhammad Ahmed · Senior MERN Stack Developer",
     description:
-      "Engineering pixel-perfect, measurable digital experiences using Next.js, TypeScript, and design systems.",
+      "Building TypeScript-first MERN solutions for SaaS, eCommerce, blockchain, and IoT teams.",
     images: ["/images/me.png"],
   },
   category: "portfolio",
@@ -90,9 +91,9 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: portfolioContent.hero.name,
-    jobTitle: "Senior Frontend Engineer",
+    jobTitle: "Senior MERN Stack Developer",
     url: "https://khalizero.com",
-    email: "mailto:hello@khalizero.com",
+    email: "mailto:aw708596@gmail.com",
     image: "https://khalizero.com/images/me.png",
     sameAs: portfolioContent.hero.socials.map((social) => social.href),
     worksFor: portfolioContent.experiences.map((experience) => ({
@@ -100,12 +101,14 @@ export default function RootLayout({
       name: experience.company,
     })),
     knowsAbout: [
-      "Next.js",
+      "MERN stack",
       "TypeScript",
-      "Product Design",
+      "Next.js",
+      "NestJS",
+      "Stripe Connect",
       "Tailwind CSS",
-      "Design Systems",
-      "UX Engineering",
+      "IoT dashboards",
+      "Blockchain payments",
     ],
   };
 

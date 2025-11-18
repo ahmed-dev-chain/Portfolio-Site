@@ -4,7 +4,6 @@ import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { SkillsSection } from "@/components/sections/SkillsSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 export const revalidate = 0;
 export const dynamic = "force-dynamic";
@@ -17,7 +16,6 @@ export default async function HomePage() {
       <ExperienceSection />
       <ProjectsSection />
       <SkillsSection />
-      <TestimonialsSection />
       <ContactSection />
     </main>
   );

@@ -1,4 +1,4 @@
-import { portfolioContent } from "@/data/portfolio";
+import { portfolioContent } from "@/data/portfolio.data";
 import { SectionHeading } from "@/components/shared/SectionHeading";
 
 export function AboutSection() {
